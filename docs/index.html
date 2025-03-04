@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+<!-- Favicon  -->
+    <link rel="shortcut icon" href="img/arcade.png" type="image/x-icon" />
+    <title>StreetFighterUNIR</title>
+</head>
+<body>
+    <h1>To live is to fight, to fight is to live!</h1>
+
+    <!-- TABLA -->
+    <table>
+      <thead>
+        <tr class="header-row">
+          <td colspan="4" class="Cabecera-tabla">
+            STREET FIGHTER
+          </td>
+        </tr>
+      </thead>
+        <tbody>
+          <!-- Filas 1 -->
+          <tr>
+            <!-- Columnas -->
+              <td class="modulo"><span class="nombre">KEN</span> <img src="img/ken.png" alt="Ken"></td>
+              <td class="modulo"><span class="nombre">CHUN-LI</span> <img src="img/ChunLi.png" alt="Chun-Li"></td>
+              <td class="modulo"><span class="nombre">ZANGIEF</span> <img src="img/zangief.png" alt="Zangief"></td>
+              <td class="modulo"><span class="nombre">DHALSIM</span> <img src="img/dhalsim.png" alt="Dhalsim"></td>
+          </tr>
+          <!-- Filas 2 -->
+          <tr>
+            <!-- Columnas -->
+              <td class="modulo"><span class="nombre">RYU</span> <img src="img/ryu.png" alt="Ryu"></td>
+              <td class="modulo"><span class="nombre">E. HONDA</span> <img src="img/ehonda.png" alt="E. Honda"></td>
+              <td class="modulo"><span class="nombre">BLANKA</span> <img src="img/blanka.png" alt="Blanka"></td>
+              <td class="modulo"><span class="nombre">GUILE</span> <img src="img/Guille.png" alt="Guile"></td>
+          </tr>
+          <!-- Filas 3 -->
+          <tr>
+            <!-- Columnas -->
+            <td class="modulo"><span class="nombre">T. HAWK</span> <img src="img/thawk.png" alt="T. Hawk"></td>
+            <td class="modulo"><span class="nombre">FEI LONG</span> <img src="img/feilong.png" alt="Fei Long"></td>
+            <td class="modulo"><span class="nombre">DEE JAY</span> <img src="img/deejay.png" alt="Dee Jay"></td>
+            <td class="modulo"><span class="nombre">CAMMY</span> <img src="img/cammy.png" alt="Cammy"></td>
+          </tr>
+          <!-- Filas 4 -->
+          <tr>
+            <!-- Columnas -->
+              <td class="modulo"><span class="nombre">BALROG</span> <img src="img/balrog.png" alt="Balrog"></td>
+              <td class="modulo"><span class="nombre">VEGA</span> <img src="img/vega.png" alt="Vega"></td>
+              <td class="modulo"><span class="nombre">SAGAT</span> <img src="img/sagat.png" alt="Sagat"></td>
+              <td class="modulo"><span class="nombre">M. BISON</span> <img src="img/mbison.png" alt="M. Bison"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+<!-- FORMULARIO -->
+<H2>Formulario de Inscripción para jugar a Street Figther</H2>
+
+<form id="formulario">
+  <!--Datos Personales-->
+  <fieldset>
+    <legend>DATOS PERSONALES</legend>
+        <label>Nombre:</label><input type="text" name="nombre" required>
+        <label>Apellidos:</label><input type="text" name="apellido" required>
+        <label>Dirección Postal:</label>    
+        <input type="text" name="calle" placeholder="Calle">
+        <input type="text" name="numero" placeholder="N°">
+        <input type="text" name="piso" placeholder="Piso">
+        <input type="text" name="codigo_postal" placeholder="Código Postal">
+        <input type="text" name="ciudad" placeholder="Ciudad"></label>
+        <label>Nick:</label><input type="text" name="nick" required>
+        <label>Correo Electrónico:</label><input type="email" name="email" required>
+  </fieldset>
+  <!--Sexo usuario-->
+  <fieldset>
+      <legend>SEXO USUARIO</legend>
+        <label><input type="radio" name="genero" value="hombre" required> Hombre</label>
+        <label><input type="radio" name="genero" value="mujer" required> Mujer</label>
+        <label><input type="radio" name="genero" value="no_decir"> Prefiero No Decir</label>
+  </fieldset>        
+  <!--Fecha-->
+  <fieldset>
+        <label>Fecha de nacimiento: <input type="date" name="fecha_nacimiento"></label>
+  </fieldset>
+
+  <!--Persoanjes-->
+  <fieldset>
+    <legend>PERSONAJES</legend>
+        <label>Selecciona el personaje:
+          <select name="personaje">
+            <option value="ken">Ken</option>
+            <option value="chunli">Chun-Li</option>
+            <option value="zangief">Zangief</option>
+            <option value="dhalsim">Dhalsim</option>
+            <option value="ryu">Ryu</option>
+            <option value="ehonda">E. Honda</option>
+            <option value="blanka">Blanka</option>
+            <option value="guile">Guile</option>
+            <option value="thawk">T. Hawk</option>
+            <option value="feilong">Fei Long</option>
+            <option value="deejay">Dee Jay</option>
+            <option value="cammy">Cammy</option>
+            <option value="balrog">Balrog</option>
+            <option value="vega">Vega</option>
+            <option value="sagat">Sagat</option>
+            <option value="mbison">M. Bison</option>
+          </select>
+      </label>     
+  </fieldset>
+  <!--Comentarios-->
+  <fieldset>
+      <legend>COMENTARIOS</legend>
+      <textarea name="comentarios" rows="5" ></textarea>
+  </fieldset>
+  <!--Botones-->
+    <button type="submit">ENVIAR</button>
+    <button type="reset">BORRAR</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--            
+ <div id="formulario">
+        <form action="mailto:pepe@gmail.com">
+          <div class="elemento">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+      
+          <div class="elemento">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"required>
+          </div>
+      
+          <div class="elemento">
+            <label for="fnacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fnacimiento" id="fnacimiento">
+          </div>
+
+          <div class="elemento">
+            <input type="reset"value="Borrar">
+            <input type="submit" value="Enviar">
+          </div>
+          
+        </form>
+      </div>       
+       -->
+
+
+     
+
+</body>
+</html>
